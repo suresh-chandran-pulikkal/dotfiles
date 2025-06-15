@@ -27,8 +27,10 @@ sudo dnf install stow # Install Stow on Fedora
 Use Stow to manage your dotfiles:
 ```bash
 stow nvim   # Apply Neovim configuration
+stow tmux   # Apply Tmux configuration
+stow bash   # Apply Bash shell configuration
 stow fish   # Apply Fish shell configuration
-stow lazygit # Apply Lazygit settings
+stow gh     # Apply GitHub configuration
 ```
 
 ## 🛠 Features
