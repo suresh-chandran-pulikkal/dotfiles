@@ -20,17 +20,17 @@ cd dotfiles
 ## Using Stow for Dotfile Management
 Install Stow:
 ```
-sudo zypper install Stow # Install Stow on openSUSE
+sudo zypper install stow # Install Stow on openSUSE
 sudo apt install stow # Install Stow on Ubuntu
 sudo dnf install stow # Install Stow on Fedora
 ```
 Use Stow to manage your dotfiles:
 ```bash
-stow nvim   # Apply Neovim configuration
-stow tmux   # Apply Tmux configuration
-stow bash   # Apply Bash shell configuration
-stow fish   # Apply Fish shell configuration
-stow gh     # Apply GitHub configuration
+stow -t ~ tmux   # Apply Tmux configuration
+stow -t ~ bash   # Apply Bash shell configuration
+stow -t ~/.config/ nvim   # Apply Neovim configuration
+stow -t ~/.config/ fish   # Apply Fish shell configuration
+stow -t ~/.config/ gh     # Apply GitHub configuration
 ```
 
 ## 🛠 Features
